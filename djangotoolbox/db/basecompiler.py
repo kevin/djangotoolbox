@@ -180,7 +180,7 @@ class NonrelQuery(object):
         value = self._normalize_lookup_value(
             lookup_type, value, field, annotation)
 
-        return field, lookup_type, value
+        return field, lookup_type, db_type, value
 
     def _normalize_lookup_value(self, lookup_type, value, field, annotation):
         """
